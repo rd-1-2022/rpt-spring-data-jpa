@@ -32,7 +32,7 @@ import org.springframework.stereotype.Component;
 @Profile("test-data")
 public class CustomerCommandLineRunner implements CommandLineRunner {
 
-	private static final Logger log = LoggerFactory.getLogger(Application.class);
+	private static final Logger log = LoggerFactory.getLogger(CustomerCommandLineRunner.class);
 
 	private CustomerRepository repository;
 
