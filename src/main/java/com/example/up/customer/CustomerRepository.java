@@ -1,8 +1,8 @@
-package com.example.up.repository;
+package com.example.up.customer;
 
 import java.util.List;
 
-import com.example.up.domain.Customer;
+import com.example.up.customer.Customer;
 
 import org.springframework.data.repository.CrudRepository;
 

@@ -15,11 +15,8 @@
  */
 
 
-package com.example.up.util;
+package com.example.up.customer;
 
-import com.example.up.Application;
-import com.example.up.domain.Customer;
-import com.example.up.repository.CustomerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
