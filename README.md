@@ -1,13 +1,29 @@
-# rpt-spring-data-jpa
-Runnable Project Template for Spring Data JPA
+# Basic Spring Data JPA application
 
-Modified from https://github.com/spring-guides/gs-accessing-data-jpa
+This project contains a test class that exercises the Spring Data JPA APIs for a `Customer` entity.
 
-## Building and Running
+The class `CustomerRepository` extends the `CrudRepository` that provides basic create, retrieve, update and delete functionality for `Customer` entities.
 
-### Maven
+The test class `CustomerRepositoryTests` exercises the repository by persisting a new `Customer` and then retrieving it.
+
+All data is persisted in an in memory H2 database.
+
+```java
+Customer customer = new Customer("first", "last");
+entityManager.persist(customer);
+
+List<Customer> findByLastName = customers.findByLastName(customer.getLastName());
+```
+
+If you run the application with the `test-data` profile, a few `Customer` entries will be created.
+
+## Running the code
+
+To run the test and exercise the `CustomerRepository` functionality in a test
+
+```bash
 ./mvnw clean package
-java -Dspring.profiles.active=test-data -jar ./target/demo-0.0.1-SNAPSHOT.jar
+``` 
 
 
 
