@@ -14,12 +14,10 @@
  * limitations under the License.
  */
 
-package com.example.up.repository;
+package com.example.up.customer;
 
 import java.util.List;
 
-import com.example.up.customer.Customer;
-import com.example.up.customer.CustomerRepository;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
